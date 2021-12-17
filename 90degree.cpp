@@ -2,7 +2,7 @@
 
 void Delete(int ** arr, int m)
 {
-for(int i = 0; i < 3; ++i)
+for(int i = 0; i < m; ++i)
 {
  delete [] arr [i];
 }
