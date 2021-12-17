@@ -1,5 +1,17 @@
 #include <iostream>
 
+void Delete(int ** arr, int m)
+{
+for(int i = 0; i < 3; ++i)
+{
+ delete [] arr [i];
+}
+
+delete [] arr;
+
+}
+
+
 void swap(int& i, int& j)
 {
 
@@ -39,8 +51,8 @@ for(int j = i ; j < n - i - 1; ++j)
 
 }
 
-
 }
+
 std::cout << "here your 90 degree rotated array\n";
 
 for(int i = 0; i < 3; ++i)
@@ -52,6 +64,7 @@ for(int j = 0 ; j < 3; ++j)
 } 
 std::cout << "\n";
 }
+Delete(arr, 3);
 }
 int main()
 {
